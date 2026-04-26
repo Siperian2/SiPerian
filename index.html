@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiPerian - Sistem Permohonan Izin Penelitian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- Placeholder for the actual logo -->
+                <img src="Logo Kementrian Imigrasi dan Pemasyarakatan.png" alt="Logo Kemenimipas" id="nav-logo">
+                <span class="logo-text">Kantor Wilayah Direktorat Jenderal Pemasyarakatan Kalimantan Timur</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#informasi">Informasi Umum</a></li>
+                <li><a href="#alur">Alur Permohonan</a></li>
+                <li><a href="#pendaftaran">Form Permohonan</a></li>
+                <li><a href="#download">Download Dokumen</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="hero">
+        <div class="hero-content">
+            <h1><span class="highlight">SiPerian</span></h1>
+            <p>Sistem Permohonan Izin Penelitian.</p>
+            <a href="#informasi" class="btn-primary">Mulai Layanan <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-building-user hero-icon"></i>
+        </div>
+    </header>
+
+    <!-- Informasi Umum -->
+    <section id="informasi" class="section">
+        <div class="section-header">
+            <h2>Informasi Umum</h2>
+            <p>Pusat informasi layanan kami</p>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-clock info-icon"></i>
+                <h3>Jam Pelayanan</h3>
+                <p><strong>Senin - Jumat:</strong> 08:00 - 16:00 WIB</p>
+                <p><strong>Sabtu - Minggu:</strong> Tutup</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt info-icon"></i>
+                <h3>Alamat Kantor</h3>
+                <p>Jl. MT. Haryono No. 22, Karang Anyar, Sungai Kunjang</p>
+                <a href="https://maps.app.goo.gl/bqnZ837dKr3fpUM37" target="_blank" class="btn-link">Lihat di Peta</a>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-instagram info-icon"></i>
+                <h3>Instagram Kantor</h3>
+                <p>Ikuti kami untuk update terbaru.</p>
+                <a href="https://www.instagram.com/pemasyarakatan_kaltim?igsh=MWRpMnY2b2FhenMxMg==" target="_blank"
+                    class="btn-secondary"><i class="fab fa-instagram"></i> @kanwilditjenpaskaltim</a>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope info-icon"></i>
+                <h3>Email Kantor</h3>
+                <p>Hubungi kami melalui surel resmi.</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kanwilditjenpaskalimantantimur@gmail.com"
+                    target="_blank" class="btn-secondary"><i class="fas fa-envelope"></i>
+                    email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Permohonan -->
+    <section id="alur" class="section bg-light">
+        <div class="section-header">
+            <h2>Alur Permohonan</h2>
+            <p>Langkah-langkah mudah untuk mendapatkan pelayanan kami</p>
+        </div>
+        <div class="alur-content text-center">
+            <p class="mb-4">Klik tombol di bawah ini untuk melihat detail gambar alur permohonan secara lengkap.</p>
+            <button class="btn-primary" onclick="openModal('modalAlur')"><i class="fas fa-project-diagram"></i> Lihat
+                Alur Permohonan</button>
+        </div>
+    </section>
+
+    <!-- Modal Alur Permohonan -->
+    <div id="modalAlur" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modalAlur')">&times;</span>
+            <h2>Bagan Alur Permohonan</h2>
+            <!-- Placeholder for Alur Image -->
+            <img src="Alur Permohonan.png" alt="Alur Permohonan" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Form Pendaftaran -->
+    <section id="pendaftaran" class="section">
+        <div class="section-header">
+            <h2>Form Permohonan</h2>
+            <p>Ajukan permohonan layanan secara online</p>
+        </div>
+        <div class="action-card">
+            <i class="fas fa-file-signature action-icon"></i>
+            <h3>Pendaftaran Layanan Online</h3>
+            <p>Untuk mempermudah proses permohonan, Anda dapat mengisi formulir secara online melalui tautan Google
+                Form di bawah ini.</p>
+            <a href="https://forms.gle/UzUJ6Ss7FucMTP6Z7" target="_blank" class="btn-primary btn-large"><i
+                    class="fas fa-external-link-alt"></i> Isi Form
+                Pendaftaran</a>
+        </div>
+    </section>
+
+    <!-- Download Dokumen -->
+    <section id="download" class="section bg-light">
+        <div class="section-header">
+            <h2>Download Dokumen</h2>
+            <p>Bantu kami meningkatkan kualitas layanan</p>
+        </div>
+        <div class="action-card">
+            <i class="fas fa-star action-icon text-gold"></i>
+            <h3>Berikan Penilaian Anda</h3>
+            <p>Silakan isi survei melalui tautan Google Form berikut dan download dokumen anda.</p>
+            <a href="https://forms.gle/ewXYRqgpf3XFaBrYA" target="_blank" class="btn-primary btn-large"><i
+                    class="fas fa-external-link-alt"></i> Isi
+                Survei</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo Kementrian Imigrasi dan Pemasyarakatan.png" alt="Logo Kemenimipas">
+                <span>Kantor Wilayah DIrektorat Jenderal Pemasyarakatan Kalimantan Timur</span>
+            </div>
+            <p>&copy; 2026 Kementerian Imigrasi dan Pemasyarakatan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
